@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Jam</title>
+    <style>
+        body{
+            background-color: #FFF5E1;
+            margin: 0;
+            padding-top: 80px;
+            color: #5E5245;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 90%;
+
+        }
+
+        #Title{
+            /* Tải ảnh ở dạng pixel */
+            image-rendering: pixelated;
+            
+            max-width: 100%;
+            height: auto;
+
+        }
+
+        #Top-space{
+            width: 100%;
+            height: 80px;
+            background-color: #5E5245;
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .menu-item {
+            color: #FFF5E1;
+            text-decoration: none;   
+            font-weight: bold;
+
+            /* Khoảng cách giữa các nút */
+            margin: 0 50px;
+
+            font-size: 20px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .menu-item:hover {
+            color: #B3A894;
+            transform: scale(1.1);
+        }
+
+
+
+        h1{color: #1E1A17; font-size: 400%; font-family: cursive;}
+        h2{color: #1E1A17; font-size: 350%; margin: 60px 0 60px 0;}
+        h3{color: #1E1A17; font-size: 300%; margin: 60px 0 60px 0;}
+        h4{color: #5E5245; font-size: 200%; margin: 60px 0 60px 0;}
+        p{
+            font-size: 20px;
+            font-weight: bolder;
+            margin: 0 30% 30px 30%;
+
+        }
+
+        
+        
+        .line{
+            width: 40%;
+            height: 8px;
+            background-color: #5E5245;
+            border: none;
+            border-radius: 4px;
+            margin: 30px auto;
+        }
+        /* Trang trí nút tải game*/
+        .download{
+            display: inline-block;
+            padding: 25px 60px;
+            background-color: #5E5245;
+            color: #FFF5E1;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 4px solid #1E1A17;
+            transition: all 0.2s;
+            margin: 20px 0;
+            cursor: pointer;
+
+        }
+        .download:hover{
+            background-color: #B3A894;
+            color: #1E1A17;
+            transform: translateY(-3px);
+
+        }
+        .download:active{
+            transform: translateY(1px);
+
+        }
+
+
+
+        /* Trang trí danh sách */
+        .list{
+            font-size: 24px;
+            font-weight: bolder;
+            list-style-position: inside;
+            padding: 0;
+
+        }
+
+        li{
+            list-style-type: square;
+        }
+
+
+
+        /* Trang trí đường liên kết */
+        .link {
+            /* Xóa gạch chân */
+            text-decoration: none;
+        }
+
+        .link:link{
+            color: #5E5245;
+        
+        }
+
+        .link:visited{
+            color: #5E5245;
+        }
+
+        .link:hover{
+            color: #B3A894;
+        }
+
+        [id] {
+            /* Khoảng cách từ đỉnh màn hình xuống phần tử khi nhảy link */
+            /* Bạn có thể điều chỉnh con số 30vh (30% chiều cao màn hình) để nó nằm đúng giữa ý bạn */
+            scroll-margin-top: 35vh; 
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="Top-space">
+        <div class="menu-container">
+            <a href="#" class="menu-item">HOME</a>
+            <a href="#game-info" class="menu-item">GAMES</a>
+            <a href="#download" class="menu-item">DOWNLOAD</a>
+            <a href="mailto:lhviet0806@gmail.com" target="_blank" class="menu-item">CONTACT US</a>
+        </div>
+    </div>
+
+    <img id="Title" src="res/pic/Title.png">
+    <!-- Chào mừng -->
+    <h1>WELCOME TO GARDEN JAM</h1>
+    <hr class="line">
+
+    <!-- Giới thiệu -->
+    <section>
+    <h2>GIỚI THIỆU</h2>
+    <p>Garden Jam là một tập hợp các trò chơi có cơ chế và hình ảnh đơn giản với chủ để là một khu vườn với tông màu ấm áp. Bạn có thể
+     chơi một vài trò chơi để giúp thư giãn đầu óc <em>(hoặc không)</em>. Hiện tại trò chơi vẫn đang trong quá trình phát triển nên bạn hãy
+     tận hưởng những trò chơi đã được hoàn thành trước. Vì là đang trong quá trình phát triên nên việc gặp lỗi là chuyện bình thường.</p>
+
+    </section>
+    
+    <!-- Mục đích -->
+    <section>
+    <h2>MỤC ĐÍCH</h2>
+    <p>Garden Jam thực ra được làm ra để nhà phát triển học, khám phá và rèn luyện cách lập trình <em>Trò chơi</em> lẫn <em>Trang Web</em>. Cụ thể là trên
+     phần mềm <em>Gamemaker Studio 2 - Godot</em> và <em>HTML - CSS</em>.</p>
+
+    </section>
+    
+    <!-- Trò chơi -->
+    <section>
+    <h2 id="game-info">TRÒ CHƠI</h2>
+    <p>Như đã giới thiệu ở trên, các trò chơi sẽ có cơ chế và hình ảnh đơn giản.</p>
+
+    <h3>Danh sách trò chơi</h3>
+    <ul class="list">
+        <li><a class="link" href="#fill-the-flower-basket">Fill the flower basket</a></li>
+        <li><a class="link" href="#carrots-in-the-dark">Carrots in the dark</a></li>
+    </ul>
+
+    </section>
+
+
+    <h3>Các trò chơi</h3>
+    <!-- Fill the flower basket -->
+    <section>
+    <h4 id="fill-the-flower-basket">FILL THE FLOWER BASKET</h4>
+    <p><em>Fill the flower bag</em> khá giống với trò chơi đập chuột nhưng ít ô hơn. Ở đây bạn sẽ sử dụng phím WASD hoặc (↑)(↓)(←)(→) để hái hoa
+     ở các ô đất tương ứng. Bạn cần hái đủ bông hoa để chiến thắng nhưng chỉ trong thời gian ngắn. Nhưng đừng lo vì mỗi lần bạn hái
+     được hoa bạn sẽ được tăng thêm thời gian nhưng nếu bạn hái trễ hoặc hái trượt bạn sẽ mất đi vài giây.</p>
+    
+     <img src="res/gif/Flower basket.gif" style="margin-top: 30px; border: 6px solid #B3A894;">
+    </section>
+
+    <!-- Carrots in the dark -->
+    <section>
+     <h4 id="carrots-in-the-dark">CARROTS IN THE DARK</h4>
+     <p><em>Carrots in the dark</em> là trò chơi tìm củ cà rốt trong bóng tối. Bạn cần hái đủ cà rốt trong thời gian quy định để thắng.
+     Bạn sẽ được cung cấp một chiếc đèn pin để soi sáng, sẽ có những bông hoa ánh sáng giúp bạn nạp lại pin nhưng pin của bạn sẽ tuột càng ngày càng nhanh.
+     Hãy cẩn thận vì nếu bạn bấm trượt bạn sẽ mất một chút pin.</p>
+
+    </section>
+    
+
+    <!-- Tải game -->
+    <section>
+    <h2 id="download">TẢI TRÒ CHƠI</h2>
+
+    <a href="res/dow/Game Jams.rar" class="download" download>DOWNLOAD</a>
+    </section>
+
+</body>
+</html>
