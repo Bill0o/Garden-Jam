@@ -57,7 +57,7 @@
 
 
 
-        h1{color: #1E1A17; font-size: 400%; font-family: cursive;}
+        h1{color: #1E1A17; font-size: 400%; margin: 60px 0 60px 0;}
         h2{color: #1E1A17; font-size: 350%; margin: 60px 0 60px 0;}
         h3{color: #1E1A17; font-size: 300%; margin: 60px 0 60px 0;}
         h4{color: #5E5245; font-size: 200%; margin: 60px 0 60px 0;}
@@ -65,6 +65,8 @@
             font-size: 20px;
             font-weight: bolder;
             margin: 0 30% 30px 30%;
+            text-align: justify;
+            text-align-last: center;
 
         }
 
@@ -149,7 +151,42 @@
 
 
         
+        @media screen and (max-width: 768px) {
+            body {
+                padding-top: 60px; /* Giảm padding vì menu điện thoại nên nhỏ hơn */
+                font-size: 85%;    /* Thu nhỏ font chữ tổng thể */
+            }
 
+            #Top-space {
+                height: 60px;      /* Thu thấp thanh menu */
+            }
+
+            .menu-item {
+                margin: 0 15px;    /* Giảm khoảng cách giữa các mục menu để không bị tràn */
+                font-size: 16px;
+            }
+
+            h1 { font-size: 250%; } /* Giảm kích thước tiêu đề lớn */
+            h2 { font-size: 200%; }
+    
+            p {
+                margin: 0 10% 20px 10%; /* Quan trọng: Giảm lề hai bên từ 30% xuống 10% để chữ có chỗ hiển thị */
+                font-size: 18px;
+            }
+
+            .line {
+                width: 80%; /* Cho đường kẻ dài ra để cân đối với màn hình hẹp */
+            }
+
+            .download {
+                padding: 15px 30px; /* Thu nhỏ nút bấm để vừa màn hình điện thoại */
+                font-size: 20px;
+            }
+
+            #Title {
+                width: 100%; /* Đảm bảo ảnh tiêu đề luôn vừa vặn */
+            }
+        }
     </style>
 </head>
 <body>
@@ -202,7 +239,7 @@
     <!-- Fill the flower basket -->
     <section>
     <h4 id="fill-the-flower-basket">FILL THE FLOWER BASKET</h4>
-    <p><em>Fill the flower bag</em> khá giống với trò chơi đập chuột nhưng ít ô hơn. Ở đây bạn sẽ sử dụng phím WASD hoặc (↑)(↓)(←)(→) để hái hoa
+    <p><em>Fill the flower bag</em> khá giống với trò chơi đập chuột nhưng ít ô hơn. Ở đây bạn sẽ sử dụng phím WASD hoặc <u>Phím mũi tên</u> để hái hoa
      ở các ô đất tương ứng. Bạn cần hái đủ bông hoa để chiến thắng nhưng chỉ trong thời gian ngắn. Nhưng đừng lo vì mỗi lần bạn hái
      được hoa bạn sẽ được tăng thêm thời gian nhưng nếu bạn hái trễ hoặc hái trượt bạn sẽ mất đi vài giây.</p>
     
