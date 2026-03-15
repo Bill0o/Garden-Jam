@@ -4,190 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garden Jam</title>
-    <style>
-        body{
-            background-color: #FFF5E1;
-            margin: 0;
-            padding-top: 80px;
-            color: #5E5245;
-            text-align: center;
-            font-family: sans-serif;
-            font-size: 90%;
+    <link rel="stylesheet" href="Style for all.css">
 
-        }
-
-        #Title{
-            /* Tải ảnh ở dạng pixel */
-            image-rendering: pixelated;
-            
-            max-width: 100%;
-            height: auto;
-
-        }
-
-        #Top-space{
-            width: 100%;
-            height: 80px;
-            background-color: #5E5245;
-            display: flex;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            justify-content: center;
-            align-items: center;
-
-        }
-        .menu-item {
-            color: #FFF5E1;
-            text-decoration: none;   
-            font-weight: bold;
-
-            /* Khoảng cách giữa các nút */
-            margin: 0 50px;
-
-            font-size: 20px;
-            transition: 0.3s;
-            display: inline-block;
-        }
-        .menu-item:hover {
-            color: #B3A894;
-            transform: scale(1.1);
-        }
-
-
-
-        h1{color: #1E1A17; font-size: 400%; margin: 60px 0 60px 0;}
-        h2{color: #1E1A17; font-size: 350%; margin: 60px 0 60px 0;}
-        h3{color: #1E1A17; font-size: 300%; margin: 60px 0 60px 0;}
-        h4{color: #5E5245; font-size: 200%; margin: 60px 0 60px 0;}
-        p{
-            font-size: 20px;
-            font-weight: bolder;
-            margin: 0 30% 30px 30%;
-            text-align: justify;
-            text-align-last: center;
-
-        }
-
-        
-        
-        .line{
-            width: 40%;
-            height: 8px;
-            background-color: #5E5245;
-            border: none;
-            border-radius: 4px;
-            margin: 30px auto;
-        }
-        /* Trang trí nút tải game*/
-        .download{
-            display: inline-block;
-            padding: 25px 60px;
-            background-color: #5E5245;
-            color: #FFF5E1;
-            text-decoration: none;
-            font-size: 30px;
-            font-weight: bold;
-            border-radius: 10px;
-            border: 4px solid #1E1A17;
-            transition: all 0.2s;
-            margin: 20px 0;
-            cursor: pointer;
-
-        }
-        .download:hover{
-            background-color: #B3A894;
-            color: #1E1A17;
-            transform: translateY(-3px);
-
-        }
-        .download:active{
-            transform: translateY(1px);
-
-        }
-
-
-
-        /* Trang trí danh sách */
-        .list{
-            font-size: 24px;
-            font-weight: bolder;
-            list-style-position: inside;
-            padding: 0;
-
-        }
-
-        li{
-            list-style-type: square;
-        }
-
-
-
-        /* Trang trí đường liên kết */
-        .link {
-            /* Xóa gạch chân */
-            text-decoration: none;
-        }
-
-        .link:link{
-            color: #5E5245;
-        
-        }
-
-        .link:visited{
-            color: #5E5245;
-        }
-
-        .link:hover{
-            color: #B3A894;
-        }
-
-        [id] {
-            /* Khoảng cách từ đỉnh màn hình xuống phần tử khi nhảy link */
-            /* Bạn có thể điều chỉnh con số 30vh (30% chiều cao màn hình) để nó nằm đúng giữa ý bạn */
-            scroll-margin-top: 35vh; 
-        }
-
-
-        
-        @media screen and (max-width: 768px) {
-            body {
-                padding-top: 60px; /* Giảm padding vì menu điện thoại nên nhỏ hơn */
-                font-size: 85%;    /* Thu nhỏ font chữ tổng thể */
-            }
-
-            #Top-space {
-                height: 60px;      /* Thu thấp thanh menu */
-            }
-
-            .menu-item {
-                margin: 0 15px;    /* Giảm khoảng cách giữa các mục menu để không bị tràn */
-                font-size: 16px;
-            }
-
-            h1 { font-size: 250%; } /* Giảm kích thước tiêu đề lớn */
-            h2 { font-size: 200%; }
-    
-            p {
-                margin: 0 10% 20px 10%; /* Quan trọng: Giảm lề hai bên từ 30% xuống 10% để chữ có chỗ hiển thị */
-                font-size: 18px;
-            }
-
-            .line {
-                width: 80%; /* Cho đường kẻ dài ra để cân đối với màn hình hẹp */
-            }
-
-            .download {
-                padding: 15px 30px; /* Thu nhỏ nút bấm để vừa màn hình điện thoại */
-                font-size: 20px;
-            }
-
-            #Title {
-                width: 100%; /* Đảm bảo ảnh tiêu đề luôn vừa vặn */
-            }
-        }
-    </style>
 </head>
 <body>
     <div id="Top-space">
@@ -195,13 +13,14 @@
             <a href="#" class="menu-item">HOME</a>
             <a href="#game-info" class="menu-item">GAMES</a>
             <a href="#download" class="menu-item">DOWNLOAD</a>
-            <a href="mailto:lhviet0806@gmail.com" target="_blank" class="menu-item">CONTACT US</a>
+            <a href="Dev Diary.html" class="menu-item">DIARY</a>
+            <a href="Tool Shed.html" class="menu-item">TOOLS</a>
         </div>
     </div>
 
     <img id="Title" src="res/pic/Title.png">
     <!-- Chào mừng -->
-    <h1>WELCOME TO GARDEN JAM</h1>
+    <h1>CHÀO MỪNG ĐẾN VỚI GARDEN JAM</h1>
     <hr class="line">
 
     <!-- Giới thiệu -->
@@ -228,8 +47,10 @@
 
     <h3>Danh sách trò chơi</h3>
     <ul class="list">
-        <li><a class="link" href="#fill-the-flower-basket">Fill the flower basket</a></li>
-        <li><a class="link" href="#carrots-in-the-dark">Carrots in the dark</a></li>
+        <li><a class="link" href="#fill-the-flower-basket">Fill the Flower Basket</a></li>
+        <li><a class="link" href="#carrots-in-the-dark">Carrots in the Dark</a></li>
+        <li><a class="link" href="#guardian-of-cornfield">Guardian of Cornfield</a></li>
+        <li><a class="link" href="#water-the-plants">Water the Plants</a></li>
     </ul>
 
     </section>
@@ -239,7 +60,7 @@
     <!-- Fill the flower basket -->
     <section>
     <h4 id="fill-the-flower-basket">FILL THE FLOWER BASKET</h4>
-    <p><em>Fill the flower bag</em> khá giống với trò chơi đập chuột nhưng ít ô hơn. Ở đây bạn sẽ sử dụng phím WASD hoặc <u>Phím mũi tên</u> để hái hoa
+    <p><em>Fill the Flower Basket</em> khá giống với trò chơi đập chuột nhưng ít ô hơn. Ở đây bạn sẽ sử dụng phím WASD hoặc Phím mũi tên để hái hoa
      ở các ô đất tương ứng. Bạn cần hái đủ bông hoa để chiến thắng nhưng chỉ trong thời gian ngắn. Nhưng đừng lo vì mỗi lần bạn hái
      được hoa bạn sẽ được tăng thêm thời gian nhưng nếu bạn hái trễ hoặc hái trượt bạn sẽ mất đi vài giây.</p>
     
@@ -249,11 +70,31 @@
     <!-- Carrots in the dark -->
     <section>
      <h4 id="carrots-in-the-dark">CARROTS IN THE DARK</h4>
-     <p><em>Carrots in the dark</em> là trò chơi tìm củ cà rốt trong bóng tối. Bạn cần hái đủ cà rốt trong thời gian quy định để thắng.
+     <p><em>Carrots in the Dark</em> là trò chơi tìm củ cà rốt trong bóng tối. Bạn cần hái đủ cà rốt trong thời gian quy định để thắng.
      Bạn sẽ được cung cấp một chiếc đèn pin để soi sáng, sẽ có những bông hoa ánh sáng giúp bạn nạp lại pin nhưng pin của bạn sẽ tuột càng ngày càng nhanh.
      Hãy cẩn thận vì nếu bạn bấm trượt bạn sẽ mất một chút pin.</p>
 
     </section>
+
+    <!-- Guardian of Cornfield -->
+    <section>
+     <h4 id="guardian-of-cornfield">GUARDIAN OF CORNFIELD</h4>
+     <p><em>Guardian of Cornfield</em> là trò chơi thủ thành. Bạn sẽ trong vai anh chàng bù nhìn Jill bảo vệ số lượng ngô nhất định khỏi những con quạ.
+     Màn chơi sẽ có 10 đợt thủ, mỗi đợt sẽ càng khó hơn nhưng đừng lo vì sức mạnh của bạn cũng sẽ tăng theo đợt. Khi đến đợt nhất định, bạn sẽ có vũ khí mới!
+     Câu hỏi đặt ra là bạn có thể sống sót tới lúc đó hay bạn sẽ thất bại trong việc bảo vệ những cây ngô.</p>
+
+    </section>
+
+    <!-- Water the Plants -->
+    <section>
+     <h4 id="water-the-plants">WATER THE PLANTS</h4>
+     <p><em>Water the Plants</em> là trò chơi thuộc dạng bắn máy bay. Bạn sẽ là bình tưới và nhiệm vụ là tưới những cái cây nhưng không nhất thiết phải
+     tưới đầy thanh. Sẽ có rất nhiều cây và loại cây khác nhau nhưng đừng lo vì khi bạn tưới đầy đủ số lượng cây nhất định, bạn sẽ lên cấp và trở nên 
+    mạnh mẽ hơn.Nhưng hãy nhớ, bạn chỉ có thể không tưới đủ một vài cây thôi. Chúc bạn may mắn!</p>
+
+    </section>
+
+
     
 
     <!-- Tải game -->
@@ -262,6 +103,10 @@
 
     <a href="res/dow/Game Jams.rar" class="download" download>DOWNLOAD</a>
     </section>
+
+    <div id="Bottom-space">
+        
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,305 @@
+
+
+body{
+    background-color: #FFF5E1;
+    margin: 0;
+    padding-top: 80px;
+    color: #5E5245;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+
+#Title{
+    /* Tải ảnh ở dạng pixel */
+    image-rendering: pixelated;
+    
+    max-width: 100%;
+    height: auto;
+
+}
+
+#Top-space{
+    width: 100%;
+    height: 80px;
+    background-color: #5E5245;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Bottom-space{
+    display: block;
+    margin: 100px 0 0 0;
+    background-color: #1E1A17;
+    padding: 160px;
+
+}
+
+.menu-item {
+    color: #FFF5E1;
+    text-decoration: none;   
+    font-weight: bold;
+
+    /* Khoảng cách giữa các nút */
+    margin: 0 50px;
+
+    font-size: 20px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.menu-item:hover {
+    color: #B3A894;
+    transform: scale(1.1);
+
+}
+
+#download{
+    margin: 160px 0 80px 0;
+
+}
+
+.download{
+    display: inline-block;
+    padding: 30px 70px;
+    background-color: #5E5245;
+    border: 4px solid #1E1A17;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #FFF5E1;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 0.4s;
+    
+
+}
+
+.download:hover{
+    color: #1E1A17;
+    background-color: #D9D0B9;
+
+}
+
+
+
+        h1{color: #1E1A17; font-size: 400%; margin: 60px 0 60px 0;}
+        h2{color: #1E1A17; font-size: 350%; margin: 60px 0 60px 0;}
+        h3{color: #1E1A17; font-size: 300%; margin: 60px 0 60px 0;}
+        h4{color: #5E5245; font-size: 200%; margin: 100px 0 40px 0;}
+        p{
+            font-size: 20px;
+            font-weight: bolder;
+            margin: 0 30% 30px 30%;
+            text-align: justify;
+            text-align-last: center;
+
+        }
+
+        
+        
+        .line{
+            width: 40%;
+            height: 8px;
+            background-color: #5E5245;
+            border: none;
+            border-radius: 4px;
+            margin: 30px auto;
+        }
+
+        .Dev-note{
+            font-style: italic;
+            color: #B3A894;
+            margin: 60px 30% 30px 30%;
+
+        }
+
+        .highlight{
+            color: #1E1A17;
+            text-align: justify;
+            text-align-last: center;
+            
+        }
+
+
+
+        /* Trang trí danh sách */
+        .list{
+            font-size: 24px;
+            font-weight: bolder;
+            list-style-position: inside;
+            padding: 0;
+
+        }
+
+        li{
+            list-style-type: square;
+            margin: 10px 0 0 0;
+            font-size: 20px;
+        }
+
+
+
+        /* Trang trí đường liên kết */
+        .link {
+            /* Xóa gạch chân */
+            text-decoration: none;
+        }
+
+        .link:link{
+            color: #5E5245;
+        
+        }
+
+        .link:visited{
+            color: #5E5245;
+        }
+
+        .link:hover{
+            color: #B3A894;
+        }
+
+        [id] {
+            /* Khoảng cách từ đỉnh màn hình xuống phần tử khi nhảy link */
+            /* Bạn có thể điều chỉnh con số 30vh (30% chiều cao màn hình) để nó nằm đúng giữa ý bạn */
+            scroll-margin-top: 35vh; 
+        }
+
+
+
+
+
+        .garden-jam-palette {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .palette-header {
+            text-align: center;
+            border-bottom: 3px solid #5E5245;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            font-size: 10px;
+        }
+        
+        .table-color {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-color th, .table-color td {
+            padding: 10px 0 10px 0;
+            text-align: center;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .table-color th {
+            color: #5E5245;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .group-header {
+            font-weight: bold;
+            color: #5E5245;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        /* Ô hiển thị màu sắc dạng hình tròn cho đẹp */
+        td:first-child {
+            width: 40px;
+            padding-left: 30px;
+            border-radius: 4px;
+        }
+
+        code.code {
+            background-color: #f0f0f0f0;
+            padding: 4px 8px;
+            border-radius: 5px;
+            color: #CD5C5C;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        code.code2 {
+            background-color: #f0f0f0f0;
+            padding: 4px 8px;
+            border-radius: 5px;
+            color: #6D8299;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+
+/* --- CALCULATOR CONTAINER --- */
+.garden-calculator {
+    background-color: #5E5245;
+    width: 340px; /* Tăng nhẹ chiều rộng để khớp 5 cột */
+    padding: 20px;
+    border-radius: 18px;
+    margin: 50px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.brand-name {
+        color: #FFF5E1;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        font-weight: bolder;
+        font-family: cursive;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 cột bằng nhau */
+    gap: 10px;
+}
+
+/* --- BUTTON STYLES (Nhóm lại) --- */
+.btn {
+    border: none;
+    padding: 16px 5px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #D9D0B9; /* Màu nền nút mặc định */
+    font-family: cursive;
+}
+
+/* Các nút số nổi bật hơn */
+.btn.num { background-color: #FFF5E1; }
+
+/* Hiệu ứng tương tác */
+.btn:hover {filter: brightness(1.1); transform: translateY(-2px); }
+.btn:active {background-color: #B3A894 !important; transform: translateY(0); }
+.btn-zero {grid-column: span 2; /* Chiếm diện tích của 2 cột */}
+
+/* --- SCREEN STYLE --- */
+.calc-screen {
+    background-color: #D9D0B9;
+    height: 90px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Courier New', monospace;
+}
+
+#display-input { font-size: 1.5rem; font-weight: bold; text-align: left; color: #1E1A17;}
+#display-result { font-size: 2rem; font-weight: bold; text-align: right; color: #1E1A17;}
